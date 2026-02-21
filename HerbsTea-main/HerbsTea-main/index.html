@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌿 HerbsTea - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fff9;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+    }
+    .hero {
+      background: url("https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?w=1400&h=800&fit=crop") no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 60, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .btn-shop {
+      background: #66bb6a;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+    .btn-shop:hover {
+      background: #388e3c;
+    }
+    .product-card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      height: 100%;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🌿 HerbsTea</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content text-center">
+    <h1>Welcome to HerbsTea 🌱</h1>
+    <p>Refreshing, Organic & Handpicked Herbal Teas for a Healthy Lifestyle</p>
+    <a href="products.html" class="btn btn-shop mt-3">Shop Now</a>
+
+    <!-- Extra Tagline -->
+    <p class="mt-3 fw-bold">🌿 Taste Wellness, Sip Happiness!</p>
+
+    <!-- Why Choose Us -->
+    <div class="container mt-4">
+      <div class="row justify-content-center text-white">
+        
+        <div class="col-12 col-md-4 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-leaf fs-1 mb-2"></i>
+            <h6 class="mb-0">100% Organic</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-bag-heart fs-1 mb-2"></i>
+            <h6 class="mb-0">Handpicked with Love</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-globe2 fs-1 mb-2"></i>
+            <h6 class="mb-0">Eco-Friendly</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+  <!-- Featured Products -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">✨ Featured Teas</h2>
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="card product-card w-100">
+          <img src="https://th.bing.com/th/id/OIP.pgedhJZo7rutkhgAzvuV9QHaE8?w=281&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="card-img-top" alt="Green Tea">
+          <div class="card-body text-center">
+            <h5 class="card-title">Organic Green Tea</h5>
+            <p class="card-text">Boosts metabolism and immunity.</p>
+            <a href="products.html" class="btn btn-shop">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 d-flex">
+        <div class="card product-card w-100">
+          <img src="https://th.bing.com/th/id/OIP.e90g4u8IVO1qZ19Tkz8UqwHaE8?w=296&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="card-img-top" alt="Lemon Tea">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lemon Herbal Tea</h5>
+            <p class="card-text">Rich in Vitamin C and antioxidants.</p>
+            <a href="products.html" class="btn btn-shop">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card product-card w-100">
+          <img src="https://th.bing.com/th/id/OIP.Z9YC1AoQAs7upYnM3snwvgHaHa?w=196&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="card-img-top" alt="Chamomile Tea">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chamomile Tea</h5>
+            <p class="card-text">Relaxing and great for sleep.</p>
+            <a href="products.html" class="btn btn-shop">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="text-white pt-5 pb-4" style="background: #2e7d32;">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- Brand Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold">🌿 HerbsTea</h5>
+        <p>Refreshing, Organic & Handpicked Herbal Teas for a Healthy Lifestyle. Sip the goodness of nature every day!</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold">Quick Links</h5>
+        <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="products.html" class="text-white text-decoration-none">Products</a></p>
+        <p><a href="cart.html" class="text-white text-decoration-none">Cart</a></p>
+        <p><a href="login.html" class="text-white text-decoration-none">Login</a></p>
+      </div>
+
+      <!-- Customer Support -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold">Customer Support</h5>
+        <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Shipping & Returns</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Contact Us</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold">Contact</h5>
+        <p><i class="bi bi-house-door"></i> 123 Herbal Street, Green City, India</p>
+        <p><i class="bi bi-envelope"></i> support@herbstea.com</p>
+        <p><i class="bi bi-phone"></i> +91 8888899999</p>
+        <p><i class="bi bi-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <p class="mb-0">© 2025 HerbsTea. All rights reserved. 🌿</p>
+        <div class="mt-2">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
